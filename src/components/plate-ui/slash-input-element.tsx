@@ -91,15 +91,15 @@ const groups: Group[] = [
          editor.transforms.insertNodes([
           {
             type: 'paragraph',
-            children: [{ text: 'A line of text in a paragraph.' }],
+            children: [{ text: '职业' }],
           },
           {
             type: 'paragraph',
-            children: [{ text: 'A line of text in a paragraph.' }],
+            children: [{ text: '年龄' }],
           },
           {
             type: 'paragraph',
-            children: [{ text: 'A line of text in a paragraph.' }],
+            children: [{ text: '技能' }],
           },
          ])
          
