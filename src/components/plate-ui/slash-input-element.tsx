@@ -76,12 +76,46 @@ const groups: Group[] = [
       {
         focusEditor: false,
         icon: <SparklesIcon />,
+        value: '插入文字',
+        onSelect: (editor) => {
+         editor.transforms.insertText("你好")
+         
+        }
+        
+      },
+      {
+        focusEditor: false,
+        icon: <SparklesIcon />,
+        value: '插入节点',
+        onSelect: (editor) => {
+         editor.transforms.insertNodes([
+          {
+            type: 'paragraph',
+            children: [{ text: 'A line of text in a paragraph.' }],
+          },
+          {
+            type: 'paragraph',
+            children: [{ text: 'A line of text in a paragraph.' }],
+          },
+          {
+            type: 'paragraph',
+            children: [{ text: 'A line of text in a paragraph.' }],
+          },
+         ])
+         
+        }
+        
+      },
+      {
+        focusEditor: false,
+        icon: <SparklesIcon />,
         value: 'AI',
         onSelect: (editor) => {
           editor.getApi(AIChatPlugin).aiChat.show();
         },
       },
     ],
+    
   },
   {
     group: 'Basic blocks',
